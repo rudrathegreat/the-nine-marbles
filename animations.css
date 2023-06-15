@@ -1,0 +1,17 @@
+@keyframes enhance {
+    0% {
+        rotate:0deg;
+    }
+
+    50% {
+        scale:1 1.5;
+    }
+
+    100% {
+        rotate:360deg;
+    }
+}
+
+.blob {
+    animation: enhance 20s linear infinite;
+}

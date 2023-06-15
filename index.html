@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Hover Distortion Effect</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="animations.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+      <div class="navbar">
+            <img src="logo.svg" alt="">
+            <a onclick='openMenu();'>Menu</a>
+            <div class="menu">
+                  <ul>
+                        <li><a onclick="document.getElementById('section-1').scrollIntoView(true);">Home</a></li>
+                        <li><a onclick="document.getElementById('section-2').scrollIntoView(true);">About</a></li>
+                        <li><a onclick="document.getElementById('section-4').scrollIntoView(true);">Author</a></li>
+                        <li><a onclick="document.getElementById('section-3').scrollIntoView(true);">Explorer</a></li>
+                  </ul>
+                  <a onclick="alert('Not available as of now');" class="pre-order">Pre-order</a>
+            </div>
+      </div>
+      <div class="hero">
+            <div class="text">
+                  <a onclick="document.getElementById('section-2').scrollIntoView(true);">What's this website about?</a>
+                  <p>Uncovering the beauty of our local neigbourhood</p>
+            </div>
+      </div>
+      <div class="about" id="section-2">
+            <div class="overlay">
+            </div>
+            <div class="number">
+                  <p>01/</p>
+                  <p>What?</p>
+            </div>
+            <div class="text"><h1>To appreciate the beauty of the Solar System, we first must be able to understand it.</h1></div>
+            <a onmouseenter="showAboutCaption();" onmouseleave="hideAboutCaption();">What’s this in the background?</a>
+            <div class="caption">
+                  <p><b>Image.</b> Ridges in the Schiaparelli Crater, the crater famous for its inclusion in the book and movie, “The Martian”.</p>
+            </div>
+      </div>
+      <div class="book">
+            <div class="book-grid">
+                  <div class="cell">
+                        <div class="number">
+                              <p>02/</p>
+                              <p>How?</p>
+                        </div>
+                        <h1>Which is why this book has been written.</h1>
+                        <a onclick="document.getElementById('stats').scrollIntoView(true);">Some statistics</a>
+                  </div>
+                  <div class="cell">
+                        <img src="cover.jpg" alt=""> 
+                  </div>
+            </div>
+      </div>
+      <div class="stats" id="stats">
+            <div class="number">
+                  <p>03/</p>
+                  <p>Statistics</p>
+            </div>
+            <h1 class="left">200+ pages</h1>
+            <h1 class="right">9 sections</h1>
+            <h1 class="left">50+ images</h1>
+            <h1 class="right">Many quotes</h1>
+            <h1 class="left">Resources</h1>
+            <left></left>
+      </div>
+      <div class="explore" id="section-3">
+            <div class="number">
+                  <p>04/</p>
+                  <p>Solar System</p>
+            </div>
+            <h1>Explore</h1>
+      </div>
+      <div class="solar-system">
+            <div class="planet" style="background:url(earth.jpg);background-size:125%;background-attachment: fixed; background-repeat:no-repeat;">
+                  <h1>Earth</h1>
+                  <p>A satellite photo of the city lights across the Mediterranean sea and Italy</p>
+            </div>
+      </div>
+      <div class="author" id="section-4">
+            <div class="number">
+                  <p>05/</p>
+                  <p>Author</p>
+            </div>
+            <div class="author-grid">
+                  <div class="cell">
+                        <div class="wrapper"></div>
+                  </div>
+                  <div class="cell">
+                        <h1>Rudra Sekhri</h1>
+                        <p>astronomer, environmentalist, author, public speaker, researcher, content creator, music producer, “young citizen of the year”</p>
+                        <a href="https://rudrathegreat.github.io">Learn More</a>
+                  </div>
+            </div>
+      </div>
+      <div class="footer">
+            <div class="footer-grid">
+                  <div class="cell">
+                        <h1>Pre-order now.</h1>
+                        <a onclick="alert('Not available as of now');" class="circle">Link here</a>
+                  </div>
+                  <div class="links-grid">
+                        <div class="cell links">
+                              <h2>Links</h2>
+                              <a onclick="document.getElementById('section-1').scrollIntoView(true);">Home</a>
+                              <a onclick="document.getElementById('section-2').scrollIntoView(true);">About</a>
+                              <a onclick="document.getElementById('section-3').scrollIntoView(true);">Explorer</a>
+                              <a href="https://rudrathegreat.github.io">Rudra Sekhri</a>
+                              <a onclick="alert('Not available as of now. For a free resource, see the Solar System Explorer');">Free Resources</a>
+                              <a href="https://the-astropods.github.io">The Astropods</a>
+                        </div>
+                        <div class="cell links">
+                              <h2>Socials</h2>
+                              <a href="https://www.linkedin.com/in/rudra-sekhri-02162219b/">LinkedIn</a>
+                              <a href="https://twitter.com/RudraSekhri">Twitter</a>
+                              <a href="https://soundcloud.com/user-151998627">SoundCloud</a>
+                              <a href="https://www.youtube.com/channel/UCAE9Wrp_IcBX_mZKYXruvLw">YouTube</a>
+                              <a href="https://www.patreon.com/theastropods/">Patreon</a>
+                              <a href="mailto:theastropods@gmail.com">Email</a>
+                        </div>
+                  </div>
+            </div>
+            <p style="margin-top:5vh;">Copyright &copy; 2023. All Rights Reserved. Designed and Developed by Rudra Sekhri.</p>
+            <p>I acknowledge the traditional owners of the land on which this book was written, the Wurundjeri People of the Kulin Nation of Australia</p>
+      </div>
+      <div class="cursor"></div>
+      <div class="blob"></div>
+      <div class="website-overlay"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+      <script src="hover-effect.umd.js"></script>
+      <script src="app.js"></script>
+      <script src="cursor.js"></script>
+      <script src="navbar.js"></script>
+</body>
+</html>
